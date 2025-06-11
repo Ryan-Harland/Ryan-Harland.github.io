@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+<style>
+.jumbotron-btns {
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  align-content: center;
+  display: block;
+  margin-top: 50px;
+} 
+</style>
+
 <div class="col-lg-12">
 <div class="row">
   <div class="col-lg-4">
@@ -85,7 +96,7 @@ layout: default
       </p>
 
       {% if site.author_location %}
-      <h6><a href="https://www.google.com/maps/search/?api=1&query={{ site.author_location }}" class="social-link"><i class="fas fa-map-marker-alt"></i> {{ site.author_location }}</a></h6>
+      <h6><a href="https://www.google.com/maps/search/?api=1&query={{ site.author_location }}" class="social-link"><i class="fas fa-map-marker-alt"></i>  {{ site.author_location }}</a></h6>
       {% endif %} {% if site.author_email %}
       <h6><a href="mailto:{{ site.author_email }}"><i class="fas fa-envelope" class="social-link"></i> {{ site.author_email }}</a></h6>
       {% endif %} {% if site.author_website_url %}
@@ -99,6 +110,12 @@ layout: default
       {%- include author_skills.html -%}
     </div>
 
+    <div class="card">
+      <h1>Achievements</h1>
+
+      {%- include achievements.html -%}
+    </div>
+
     {% if site.wakatime_username %}
     <div class="card">
       <h1>Coding Activity</h1>
@@ -108,37 +125,53 @@ layout: default
     {% endif %}
   </div>
   <div class="col-lg-8">
-    {% if site.author_bio %}
     <div class="card">
       <h1 class="card-title">About</h1>
-      <p>{{ site.author_bio }}</p>
+      <p>Hi! I'm Ryan. I'm a recent graduate from Sheffield Hallam University with a passion for all things development. I enjoy dabbling in many disciplines, 
+        however have an affinity for engine development and tools development.
+        <br/><br/> Throughout my years of development I've gained familiarity with numerous tools and disciplines, 
+        from designing and making small games to even building a custom game engine that runs on a PlayStation 5.
+        I also have experience with Graphics Programming as well as creating apps with WPF, and some more limited experience working in other sectors such as DevOps,
+        having built custom GitHub workflows as well as maintaining TeamCity scripts. 
+        I'm a quick learner too, so if there's something I'm unfamiliar with I can pick it up on the fly.
+        <br/><br/> My primary tool of choice is Unreal Engine, and where a lot of my experience lies, however I have experience in using Unity, as well as building and maintaining 
+        custom frameworks inside and outside the realm of game development.
+
+      </p>
     </div>
-    {% endif %} {% if site.show_author_project_details == true %}
+    {% if site.show_author_project_details == true %}
     <div id="author_projects" class="card">
-      <h1 class="card-title">Projects</h1>
+      <h1 class="card-title">Recent Projects</h1>
       <br />
-      {% for project in site.author_project_details %} {% if project.visibility
-      == true %}
-      <div class="row" id="project-card">
-        <div class="col-md-6">
+      {% for project in site.posts %} {% if project.visibility
+      == true and project.featured == true %} 
+      <div class="row" id="project-card" style="padding: 5px;">
+        <div class="col-md-6"> 
           <img
-            src="{{site.url}}{{site.baseurl}}/assets/img/{{project.project_thumbnail}}"
+            src="{{site.url}}{{site.baseurl}}/{{project.thumbnail}}"
             class="project-img"
           />
         </div>
         <div class="col-md-4 center">
-          <h4 class="experience-title">{{ project.project_title }}</h4>
-          <h6 class="experience-info">{{ project.project_info}}</h6>
-          <p class="experience-desc">{{ project.project_description }}</p>
+          <h4 class="experience-title"><a href="{{ project.permalink }}">{{ project.title }}</a></h4>
+          <h6 class="experience-info">{{ project.info }}</h6>
+          <p class="experience-desc">{{ project.summary }}</p>
           <p>
+            {% if project.project_url %}
             <a class="project-link" href="{{project.project_url}}"
               >{{ project.project_url}}</a
             >
+            {% endif %}
           </p>
         </div>
       </div>
       <br />
       {% endif %} {% endfor %}
+      <div class="jumbotron-btns">
+        <a href="{{site.url}}{{site.baseurl}}/projects">
+          <button class="btn btn-md btn-warning"> <strong>View More</strong> </button>
+        </a>
+      </div>
     </div>
     {% endif %} {% if site.show_author_work_experiences == true %}
     <div class="card">

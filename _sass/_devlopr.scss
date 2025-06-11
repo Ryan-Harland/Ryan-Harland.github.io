@@ -649,16 +649,20 @@ header {
     padding-left: 5px;
     padding-top: 2px;
     margin: 5px;
+    display: flex;
 }
 .recent-article-link{
     font-size: 20px;
     text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .article-card-link, .article-card-link:hover{
     text-decoration: none;
     color: orange !important;
 }
 .article-card{
+    position: relative;
     list-style-type: none;
 }
 .article-card a :hover{

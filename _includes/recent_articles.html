@@ -1,19 +1,37 @@
+<style>
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 20%;
+  z-index: 0;
+  pointer-events: none;
+}
+</style>
+
 <section id="recent-articles">
   <div id="recent-articles-header">
     <div id="recent-articles-title">
-      <h1 class="card-title">Recent Articles</h1>
+      <h1 class="card-title">Recent Projects</h1>
     </div>
     <div id="recent-articles-show-all">
-      <a class="btn btn-lg btn-dark" href="/blog"> View All </a>
+      <a class="btn btn-lg btn-dark" href="/projects"> View All </a>
     </div>
   </div>
   <br />
 
   <ul>
-    {% for post in site.posts limit:5 %}
+    {% assign recents = site.posts | where: 'hidden-from-recents', 'false' %}
+    {% for post in recents limit:5 %}
     <li class="article-card">
       <a href="{{post.url}}" class="article-card-link">
         <div id="article-container">
+          <img
+            src="{{site.url}}{{site.baseurl}}/{{post.thumbnail}}" alt="" aria-hidden="true" tabindex="-1" class="background-img"
+          />
           <div id="article-img">
             {% if post.author %}
               {% assign author = post.author %}
@@ -29,12 +47,12 @@
 
           </div>
           <div id="article-link">
-              <p class="recent-article-link">{{post.title}} <span style="color: #ccc; font-size: 15px;"> - <i><time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></i></span></p>
+              <p class="recent-article-link">{{post.title}} <span style="color: #ccc; font-size: 15px;"> - <i><time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></i>  - {{ post.summary }}</span></p>
             </div>
             <div id="article-alert">
-            {% for cat in post.category limit:1 %}
-             <button class="btn btn-sm btn-dark">{{cat}}</button>
-            {% endfor %}
+                {% for cat in post.technologies limit:2 %}
+                <button class="btn btn-sm btn-dark" style="margin-top: auto; margin-bottom: auto;">{{cat}}</button>
+                {% endfor %}
             </div>
         </div>
       </a>

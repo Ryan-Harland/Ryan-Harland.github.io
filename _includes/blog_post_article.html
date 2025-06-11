@@ -2,26 +2,30 @@
   <div class="card-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <h4 class="post-meta">{{ page.summary }}</h4>
+    <div class="project-info" style="display: flex;">
+      <p class="post-summary">
+        Year of creation:  
+        <time datetime="{{ page.date }}" itemprop="datePublished"
+          >{{ page.date | date: "%Y" }}</time
+        >
+      </p>
+      <p class="post-summary" style="padding-left: 2ch;">
+        Role:  {{page.role}}
+      </p>
+    </div>
+    {% if page.team %}
     <p class="post-summary">
-      Posted by : {% if page.author %}
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name"><a href="{{site.url}}{{site.baseurl}}/blog/authors/{{page.author}}">{{ page.author }}</a></span> </span
-      >{% endif %} on
-      <time datetime="{{ page.date }}" itemprop="datePublished"
-        >{{ page.date | date: "%b %-d, %Y" }}</time
-      >
+      Team Members:  
+    {% for member in page.team %}
+      {{ member }}{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
     </p>
-    <span
-      class="disqus-comment-count"
-      data-disqus-identifier="{{ page.url }}"
-    ></span>
+    {% endif %} 
     <div class="post-categories">
-      {% if post %} {% assign categories = post.categories %} {% else %} {%
-      assign categories = page.categories %} {% endif %} Category : {% for
-      category in categories %}
-      <a href="{{site.baseurl}}/blog/categories/{{category|slugize}}"
-        >{{category}}</a
-      >
+      {% if post %} {% assign categories = post.technologies %} {% else %} {%
+      assign technologies = page.technologies %} {% endif %} Technologies:  {% for
+      category in technologies %}
+      <a>{{category}}</a>
       {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
     </div>
   </div>
@@ -36,38 +40,4 @@
     <br />
     {{ content }}
     <br />
-    {%- include share_page.html -%}
-    <!-- Author box -->
-    {% assign author = site.data.authors[page.author] %}
-      {% if author %}
-      {% include author.html %}
-    {% endif %}
-  </div>
-
-  <div class="comments">
-    <script src="https://giscus.app/client.js"
-        data-repo="sujaykundu777/devlopr-jekyll"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkxMzk1NzQ1NTY="
-        data-category="General"
-        data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyODk4MTky"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-    </script>
-  </div>
-
-  {%- if site.hyvor_talk_website_id -%}
-  <div class="comments">
-    {%- include hyvor_comments.html -%}
-   </div>
-    {%- endif -%}
-  <!-- Incomment incase you want to use Disqus
-      <div id="disqus_thread"></div>
-   -->
 </article>
