@@ -7,7 +7,7 @@ role: Placement Programmer
 technologies: ['C++', 'Unreal Engine', 'C#', 'ImGui', 'WPF']
 thumbnail: /assets/img/posts/top-secret.png
 permalink: /projects/Unannounced-Project/
-visibility: true
+visibility: false
 hidden-from-recents: false
 featured: true
 ---

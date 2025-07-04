@@ -24,7 +24,9 @@
   <br />
 
   <ul>
-    {% assign recents = site.posts | where: 'hidden-from-recents', 'false' %}
+
+    {% assign visible = site.posts | where: 'visibility', true %} 
+    {% assign recents = visible | where: 'hidden-from-recents', false %}
     {% for post in recents limit:5 %}
     <li class="article-card">
       <a href="{{post.url}}" class="article-card-link">
