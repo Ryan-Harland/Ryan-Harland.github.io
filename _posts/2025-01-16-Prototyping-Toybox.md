@@ -2,6 +2,7 @@
 layout: post
 title:  "Prototyping Toybox"
 summary: "An Unreal Engine plugin that allows global messaging and gameplay events without code"
+date: '2025-01-16 00:00:00 +0000'
 role: Solo Developer
 technologies: ['C++', 'Unreal Engine', 'Quartz', 'Cloudflare']
 thumbnail: assets/img/posts/prototyping-toybox.png
