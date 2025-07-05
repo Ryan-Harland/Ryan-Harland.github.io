@@ -29,5 +29,5 @@ The gameplay mechanics for the tutorial remained very simple. Basic survival mec
 
 Simple zombie melee AI was also implemented to encourage a combat challenge in the final areas of the tutorial. The testing level of this project also served as grounds for another AI implementation for a different module, which was a simple wildlife AI, in which rabiits could hop around, flee from the player when scared, and automatically seek out food when hungry.
 
-<img class="inline-center" src="/assets/img/posts/outnumbered/Weaponsmith.png" alt-text="The interior of the weaponsmith in the tutorial level"/>
+<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/outnumbered/Weaponsmith.png" alt-text="The interior of the weaponsmith in the tutorial level"/>
 <p style="font-size: 13px; text-align: center;"><i>The interior of the weaponsmith in the tutorial level</i></p>
