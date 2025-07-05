@@ -31,5 +31,5 @@ As this was a work-in-progress project, only core prototyping features have been
 
 This game initially proposed a lot of technical challenges with the engine, as it was my first look at how C++ is implemented within the engine, as well as a deeper dive into thinks like memory management and optimization, especially surrounding the usage of soft object references.
 
-<img class="inline-center" src="assets/img/posts/robo-revolution/room-2.png" alt-text="A shot of the room from the other point of view"/>
+<img class="inline-center" src="/assets/img/posts/robo-revolution/room-2.png" alt-text="A shot of the room from the other point of view"/>
 <p style="font-size: 13px; text-align: center;"><i>A shot of the first level, from the other side of the room</i></p>

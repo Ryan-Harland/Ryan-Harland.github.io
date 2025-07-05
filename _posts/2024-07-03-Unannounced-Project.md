@@ -9,6 +9,6 @@ thumbnail: assets/img/posts/top-secret.png
 permalink: /projects/Unannounced-Project/
 visibility: false
 hidden-from-recents: false
-featured: true
+featured: true 
 released: true
 ---
