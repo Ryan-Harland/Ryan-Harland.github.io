@@ -1,0 +1,38 @@
+picture_path: project-screens
+preview:
+  filename: tutorial-finished
+  original: tutorial-finished.png
+  sizes:
+  - tutorial-finished.png
+  thumbnail: tutorial-finished-thumbnail.png
+pictures:
+- filename: tutorial-beginnings
+  original: tutorial-beginnings.png
+  sizes:
+  - tutorial-beginnings.png
+  thumbnail: tutorial-beginnings-thumbnail.png
+  title: The beginnings of A.L.E.R.T's tutorial level
+- filename: tutorial-finished
+  original: tutorial-finished.png
+  sizes:
+  - tutorial-finished.png
+  thumbnail: tutorial-finished-thumbnail.png
+  title: A.L.E.R.T's tutorial level after some much needed set dressing and level design
+- filename: tutorial-lava
+  original: tutorial-lava.png
+  sizes:
+  - tutorial-lava.png
+  thumbnail: tutorial-lava-thumbnail.png
+  title: A hazardous lava section in A.L.E.R.T's tutorial level. Narrow pathways carry the player to some welcome items
+- filename: level-0.5-end
+  original: level-0.5-end.png
+  sizes:
+  - level-0.5-end.png
+  thumbnail: level-0.5-end-thumbnail.png
+  title: The ending of Level 0.5. The player can use their keycards to free the aliens from captivity
+- filename: level-1-birdseye
+  original: level-1-birdseye.png
+  sizes:
+  - level-1-birdseye.png
+  thumbnail: level-1-birdseye-thumbnail.png
+  title: An in-progress birdseye of the designer-created Level 1. This is the first real level and is much larger as a result

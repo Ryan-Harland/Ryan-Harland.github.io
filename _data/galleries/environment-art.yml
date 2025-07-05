@@ -1,0 +1,38 @@
+picture_path: env-art
+preview:
+  filename: train-station
+  original: train-station.png
+  sizes:
+  - train-station.png
+  thumbnail: train-station-thumbnail.png
+pictures:
+- filename: train-station
+  original: train-station.png
+  sizes:
+  - train-station.png
+  thumbnail: train-station-thumbnail.png
+  title: Minimalistic Train Station
+- filename: floating-island
+  original: floating-island.png
+  sizes:
+  - floating-island.png
+  thumbnail: floating-island-thumbnail.png
+  title: Low Poly Floating Island
+- filename: blacksmith
+  original: blacksmith.png
+  sizes:
+  - blacksmith.png
+  thumbnail: blacksmith-thumbnail.png
+  title: Blacksmith Render
+- filename: potion-dungeon
+  original: potion-dungeon.png
+  sizes:
+  - potion-dungeon.png
+  thumbnail: potion-dungeon-thumbnail.png
+  title: Potion Dungeon
+- filename: alchemy-bench
+  original: alchemy-bench.png
+  sizes:
+  - alchemy-bench.png
+  thumbnail: alchemy-bench-thumbnail.png
+  title: Alchemy Bench

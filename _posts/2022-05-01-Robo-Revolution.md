@@ -6,14 +6,13 @@ date: '2022-05-01 00:00:00 +0000'
 role: Co-Director
 technologies: ['Blueprints', 'Unreal Engine', 'C++']
 team: ['Ryan Harland', 'Luke Saunderson']
-thumbnail: /assets/img/posts/robo-revolution.png
+thumbnail: assets/img/posts/robo-revolution.png
 permalink: /projects/Robo-Revolution/
 visibility: true
 hidden-from-recents: false
 featured: true
+released: true
 ---
-
-<img class="inline-center" src="/assets/img/posts/robo-revolution/room-2.png" alt-text="A shot of the room from the other point of view"/>
 
 ### Key Responsibilities
 - Manage the C++ side of the project
@@ -31,3 +30,6 @@ The assets made for this game were split between me, and my at the time partner,
 As this was a work-in-progress project, only core prototyping features have been implemented, such as a limited sample of the playable characters and their abilities, as well as the other core mechanics needed for playing the game such as collecting trash, as well as checklists for clearing sections of rooms.
 
 This game initially proposed a lot of technical challenges with the engine, as it was my first look at how C++ is implemented within the engine, as well as a deeper dive into thinks like memory management and optimization, especially surrounding the usage of soft object references.
+
+<img class="inline-center" src="assets/img/posts/robo-revolution/room-2.png" alt-text="A shot of the room from the other point of view"/>
+<p style="font-size: 13px; text-align: center;"><i>A shot of the first level, from the other side of the room</i></p>

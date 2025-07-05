@@ -6,14 +6,13 @@ date: '2021-05-16 00:00:00 +0000'
 role: Game Designer
 technologies: ['Blueprints', 'Unreal Engine']
 team: ['Ryan Harland', 'Luke Saunderson']
-thumbnail: /assets/img/posts/outnumbered.png
+thumbnail: assets/img/posts/outnumbered.png
 permalink: /projects/Outnumbered/
 visibility: true
 hidden-from-recents: false
 featured: false
+released: true
 ---
-
-<img class="inline-center" src="/assets/img/posts/outnumbered/Weaponsmith.png" alt-text="The interior of the weaponsmith in the tutorial level"/>
 
 ### Key Responsibilities
 - Supplement asset creation with various low-poly post apocalyptic assets
@@ -29,3 +28,6 @@ The result of this project suffered heavily from it's intended outcome due to sc
 The gameplay mechanics for the tutorial remained very simple. Basic survival mechanics were implemented such as stamina, hunger, thirst and health, as well as a weapon system with 1 available gun. Interaction systems were also implemented to allow the user to press buttons and interact with doors.
 
 Simple zombie melee AI was also implemented to encourage a combat challenge in the final areas of the tutorial. The testing level of this project also served as grounds for another AI implementation for a different module, which was a simple wildlife AI, in which rabiits could hop around, flee from the player when scared, and automatically seek out food when hungry.
+
+<img class="inline-center" src="assets/img/posts/outnumbered/Weaponsmith.png" alt-text="The interior of the weaponsmith in the tutorial level"/>
+<p style="font-size: 13px; text-align: center;"><i>The interior of the weaponsmith in the tutorial level</i></p>

@@ -10,12 +10,16 @@
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <h4 class="post-meta">{{ page.summary }}</h4>
     <div class="project-info" style="display: flex;">
+      {% if page.released %}
       <p class="post-summary">
         Year of creation:  
-        <time datetime="{{ page.date }}" itemprop="datePublished"
-          >{{ page.date | date: "%Y" }}</time
-        >
+        <time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%Y" }}</time>
       </p>
+      {% else %}
+      <p class="post-summary">
+        Year of creation: Unreleased
+      </p>
+      {% endif %}
       <p class="post-summary" style="padding-left: 2ch;">
         Role:  {{page.role}}
       </p>

@@ -226,6 +226,8 @@ header {
     margin: 20px !important;
     padding: 20px !important;
     background-color: var(--card-background-color) !important;
+    border-width: 3px !important;
+    border-radius: 0.5rem !important;
 }
 
 #topNav{
@@ -263,7 +265,7 @@ header {
     padding: .25rem;
     background-color: #000 !important;
     border: 1px solid #020305 !important;
-    border-radius: .25rem;
+    border-radius: .4rem;
     max-width: 100%;
     height: auto;
     margin: 15px;
@@ -528,7 +530,8 @@ header {
     padding-left: 0;
     list-style: none;
     border-radius: .25rem;
-    margin-left: 20px !important;
+    margin-left: auto !important;    
+    margin-right: auto !important;
 }
 
 .jumbotron-heading{

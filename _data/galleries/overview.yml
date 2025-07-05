@@ -1,9 +1,18 @@
 -
-  title: Mountains
-  directory: mountains
+  title: Dioramas
+  directory: env-art
   preview:
-    filename: 1.jpg
-    original: 1-thumbnail.jpg
+    filename: train-station.png
+    original: train-station-thumbnail.png
     sizes:
-    - 1-thumbnail.jpg
-    thumbnail: 1-thumbnail.jpg
+    - train-station-thumbnail.png
+    thumbnail: train-station-thumbnail.png
+-
+  title: Project Screenshots
+  directory: project-screens
+  preview:
+    filename: tutorial-finished.png
+    original: tutorial-finished-thumbnail.png
+    sizes:
+    - tutorial-finished-thumbnail.png
+    thumbnail: tutorial-finished-thumbnail.png

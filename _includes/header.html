@@ -18,7 +18,12 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="{{ site.url}}{{site.baseurl}}{{ i.url }}"
+                  {% if i.url contains "https://" %}
+                    href="{{ i.url }}"
+                    target="_blank"
+                  {% else %}
+                    href="{{ site.url}}{{site.baseurl}}{{ i.url }}"
+                  {% endif %}
                   >{{ i.text }}</a
                 >
               </li>
