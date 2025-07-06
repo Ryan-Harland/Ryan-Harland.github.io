@@ -5,7 +5,7 @@ summary: "An Unreal Engine plugin that allows global messaging and gameplay even
 date: '2025-01-16 00:00:00 +0000'
 role: Solo Developer
 technologies: ['C++', 'Unreal Engine', 'Quartz', 'Cloudflare']
-thumbnail: assets/img/posts/prototyping-toybox.png
+thumbnail: assets/img/posts/prototyping-toybox.webp
 permalink: /projects/Prototyping-Toybox/
 visibility: true
 hidden-from-recents: false

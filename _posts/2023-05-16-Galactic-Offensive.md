@@ -5,7 +5,7 @@ summary: "A 2D boss-rush space game I made as my second-year project"
 date: '2022-05-16 00:00:00 +0000'
 role: Solo Developer
 technologies: ['C++', 'DirectX 11', 'AssImp']
-thumbnail: assets/img/posts/galactic-offensive.png
+thumbnail: assets/img/posts/galactic-offensive.webp
 permalink: /projects/Galactic-Offensive/
 visibility: true
 hidden-from-recents: false
