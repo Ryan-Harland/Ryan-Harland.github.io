@@ -22,7 +22,7 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: profile.webp
 author: Ryan Harland
 author_bio: I'm an aspiring indie game developer and programmer with a love for many disciplines!
 author_email: "rharland726@gmail.com"
@@ -36,13 +36,13 @@ hero_cover_img: background.webp # replace this for changing homepage cover (eg. 
 # Experiences
 author_work_experiences:
             - company_name: Sumo Digital
-              company_logo: sumo.png
+              company_logo: sumo.webp
               company_url: https://www.sumo-digital.com/
               designation: Placement Programmer
               description: I was responsible for maintaining a number of Unreal Engine plugins. Secondary to this was significant work with WPF as well as overhauling various command line utilities
               visibility: true
             - company_name: Derbyshire County Council
-              company_logo: dcc.png
+              company_logo: dcc.webp
               company_url: https://www.derbyshire.gov.uk/home.aspx
               designation: Freelance Contract
               description: As part of my work experience during college, I was contracted to create an educational video for children about the Derwent Valley Mills using Unreal Engine 4
@@ -50,13 +50,13 @@ author_work_experiences:
 
 # Education
 author_education_details:
-              - college_logo: shu.png
+              - college_logo: shu.webp
                 college_name: Sheffield Hallam University
                 college_url: https://www.shu.ac.uk/
                 college_degree: BSc Computer Science for Games - First Class w/ Honours
                 description: During this course I undertook many projects, such as creating games using SFML, DirectX 11, as well as creating a custom engine for the PlayStation 5, of which our game won "Best Level 6 Group Project" at GameOver 25
                 visibility: true
-              - college_logo: cc.png
+              - college_logo: cc.webp
                 college_name: Chesterfield College
                 college_url: https://www.chesterfield.ac.uk/
                 college_degree: Level 3 Extended Diploma in Game Design - D*D*D
