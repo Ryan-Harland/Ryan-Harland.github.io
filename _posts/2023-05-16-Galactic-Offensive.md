@@ -29,21 +29,21 @@ Firstly, DirectX had to be setup to draw models rather than simple flat shapes. 
 Using this threadpool allowed me to write a simple worker function to handle the loading of the assets into memory and then queue the job and allow the model to render when it's ready. Fortunately, due to the lightweight nature of the model, it loads almost instantly on most modern hardware. During this time, we make sure to also preload other needed resources and allocate any memory needed for the game, allowing us to have preloaded models, textures, and pooled objects in order to make runtime spawning of these nearly instant. 
 
 
-<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/galactic-offensive/main-menu.png" alt-text="In-game screenshot showing the main menu"/>
+<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/galactic-offensive/main-menu.webp" alt="In-game screenshot showing the main menu"/>
 <p style="font-size: 13px; text-align: center;"><i>The main menu, showing interactive buttons as well as 3D meshes and lighting</i></p>
 
 The gameplay also presented a number of challenges. Performance wasn't as much of a concern here, as all necessary optimisation steps had been completed before the game loads. Making sure object pooling was used allowed a lot more freedom in how the game was played. Despite this however, a debug view was still implemented, toggled by pressing a function key. 
 
 This was invaluable in the development process, as it allowed me to visualise collision radii, see the current frametime and framerate, as well as input key statuses, player velocity and co-ordinates, as well as active bullets. The lattermost element was critical to ensure that my object pool was big enough for the amount of bullets used, as exceeding the cap would severely dampen the difficulty of later bosses.
 
-<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/galactic-offensive/debug-menu.png" alt-text="In-game screenshot showing the debug menu"/>
+<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/galactic-offensive/debug-menu.webp" alt="In-game screenshot showing the debug menu"/>
 <p style="font-size: 13px; text-align: center;"><i>The debug menu, showing helpful information as well as providing visualisation for collision</i></p>
 
 Since the game was developed as a boss-rush style game, only a single enemy is present at once. The player has a finite number of hit points, which decrease on colliding with an enemy bullet. Score increases based on time spent, but also functions as a currency, where health can be restored for a score penalty. This creates an interesting dynamic where the player can choose to risk the run for a better high score, or if they want to take a small penalty and play it safe at the risk of being unable to take the top spot. It also introduces an emergent behaviour where a player may try to avoid damage, and keep the boss alive for as long as possible to reach that high score.
 
 Each boss increases in difficulty with attack variations. Each has a static number of "gun" vectors, from which a bullet can shoot. Attack patterns are predefined, but randomly chosen, making use of a vector of function pointers, from which a random attack can be called. This was critical in avoiding repetition and increasing challenge in later bosses, allowing a gap in fire for a keen-eyed player to dodge through.
 
-<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/galactic-offensive/game.png" alt-text="In-game screenshot showing one of the boss fights"/>
+<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/galactic-offensive/game.webp" alt="In-game screenshot showing one of the boss fights"/>
 <p style="font-size: 13px; text-align: center;"><i>The game screen, showing the purchasable power up and the different enemy attack patterns</i></p>
 
 The high score table was certainly the easiest, but one of the most fun parts of this project. High scores are all stored in an encrypted .csv file, encrypted with a simple XOR cipher. Since this is an offline arcade game, security wasn't a paramount concern, however I still wanted it to be moderately inconvenient to cheat high scores. On writing and loading highscores they get serialized and correctly displayed in game, but to a spreadsheet or text editor they appear as unrecognizable junk.
@@ -52,5 +52,5 @@ I also decided to make this game over screen different based on the player's out
 
 When compared to high scores in my last project greater care was taken for keyboard input as well, listening for windows messages and interpreting the values passed, taking specific keycodes such as backspace to manipulate the entered data.
 
-<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/galactic-offensive/game-over.png" alt-text="In-game screenshot showing the ending for beating all bosses"/>
+<img class="inline-center" src="{{site.url}}{{site.baseurl}}/assets/img/posts/galactic-offensive/game-over.webp" alt="In-game screenshot showing the ending for beating all bosses"/>
 <p style="font-size: 13px; text-align: center;"><i>The ending screen, whether you get a congratulatory message depends on whether you survived or not</i></p>
