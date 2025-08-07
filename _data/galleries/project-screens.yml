@@ -1,38 +1,38 @@
 picture_path: project-screens
 preview:
   filename: tutorial-finished
-  original: tutorial-finished.png
+  original: tutorial-finished.webp
   sizes:
-  - tutorial-finished.png
-  thumbnail: tutorial-finished-thumbnail.png
+  - tutorial-finished.webp
+  thumbnail: tutorial-finished-thumbnail.webp
 pictures:
 - filename: tutorial-beginnings
-  original: tutorial-beginnings.png
+  original: tutorial-beginnings.webp
   sizes:
-  - tutorial-beginnings.png
-  thumbnail: tutorial-beginnings-thumbnail.png
+  - tutorial-beginnings.webp
+  thumbnail: tutorial-beginnings-thumbnail.webp
   title: The beginnings of A.L.E.R.T's tutorial level
 - filename: tutorial-finished
-  original: tutorial-finished.png
+  original: tutorial-finished.webp
   sizes:
-  - tutorial-finished.png
-  thumbnail: tutorial-finished-thumbnail.png
+  - tutorial-finished.webp
+  thumbnail: tutorial-finished-thumbnail.webp
   title: A.L.E.R.T's tutorial level after some much needed set dressing and level design
 - filename: tutorial-lava
-  original: tutorial-lava.png
+  original: tutorial-lava.webp
   sizes:
-  - tutorial-lava.png
-  thumbnail: tutorial-lava-thumbnail.png
+  - tutorial-lava.webp
+  thumbnail: tutorial-lava-thumbnail.webp
   title: A hazardous lava section in A.L.E.R.T's tutorial level. Narrow pathways carry the player to some welcome items
 - filename: level-0.5-end
-  original: level-0.5-end.png
+  original: level-0.5-end.webp
   sizes:
-  - level-0.5-end.png
-  thumbnail: level-0.5-end-thumbnail.png
+  - level-0.5-end.webp
+  thumbnail: level-0.5-end-thumbnail.webp
   title: The ending of Level 0.5. The player can use their keycards to free the aliens from captivity
 - filename: level-1-birdseye
-  original: level-1-birdseye.png
+  original: level-1-birdseye.webp
   sizes:
-  - level-1-birdseye.png
-  thumbnail: level-1-birdseye-thumbnail.png
+  - level-1-birdseye.webp
+  thumbnail: level-1-birdseye-thumbnail.webp
   title: An in-progress birdseye of the designer-created Level 1. This is the first real level and is much larger as a result

@@ -2,17 +2,17 @@
   title: Dioramas
   directory: env-art
   preview:
-    filename: train-station.png
-    original: train-station-thumbnail.png
+    filename: train-station.webp
+    original: train-station-thumbnail.webp
     sizes:
-    - train-station-thumbnail.png
-    thumbnail: train-station-thumbnail.png
+    - train-station-thumbnail.webp
+    thumbnail: train-station-thumbnail.webp
 -
   title: Project Screenshots
   directory: project-screens
   preview:
-    filename: tutorial-finished.png
-    original: tutorial-finished-thumbnail.png
+    filename: tutorial-finished.webp
+    original: tutorial-finished-thumbnail.webp
     sizes:
-    - tutorial-finished-thumbnail.png
-    thumbnail: tutorial-finished-thumbnail.png
+    - tutorial-finished-thumbnail.webp
+    thumbnail: tutorial-finished-thumbnail.webp

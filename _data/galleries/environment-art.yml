@@ -1,38 +1,38 @@
 picture_path: env-art
 preview:
   filename: train-station
-  original: train-station.png
+  original: train-station.webp
   sizes:
-  - train-station.png
-  thumbnail: train-station-thumbnail.png
+  - train-station.webp
+  thumbnail: train-station-thumbnail.webp
 pictures:
 - filename: train-station
-  original: train-station.png
+  original: train-station.webp
   sizes:
-  - train-station.png
-  thumbnail: train-station-thumbnail.png
+  - train-station.webp
+  thumbnail: train-station-thumbnail.webp
   title: Minimalistic Train Station
 - filename: floating-island
-  original: floating-island.png
+  original: floating-island.webp
   sizes:
-  - floating-island.png
-  thumbnail: floating-island-thumbnail.png
+  - floating-island.webp
+  thumbnail: floating-island-thumbnail.webp
   title: Low Poly Floating Island
 - filename: blacksmith
-  original: blacksmith.png
+  original: blacksmith.webp
   sizes:
-  - blacksmith.png
-  thumbnail: blacksmith-thumbnail.png
+  - blacksmith.webp
+  thumbnail: blacksmith-thumbnail.webp
   title: Blacksmith Render
 - filename: potion-dungeon
-  original: potion-dungeon.png
+  original: potion-dungeon.webp
   sizes:
-  - potion-dungeon.png
-  thumbnail: potion-dungeon-thumbnail.png
+  - potion-dungeon.webp
+  thumbnail: potion-dungeon-thumbnail.webp
   title: Potion Dungeon
 - filename: alchemy-bench
-  original: alchemy-bench.png
+  original: alchemy-bench.webp
   sizes:
-  - alchemy-bench.png
-  thumbnail: alchemy-bench-thumbnail.png
+  - alchemy-bench.webp
+  thumbnail: alchemy-bench-thumbnail.webp
   title: Alchemy Bench
